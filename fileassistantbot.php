@@ -2,12 +2,11 @@
 <?php
 
 /**
- * UploaditRoBot
+ * 
  * Simple Telegram bot to generate download link of files and upload files from URL
  * Based on MadelineProto
  * https://github.com/danog/MadelineProto
- * By TheDarkW3b
- * https://t.me/TheDarkW3b
+ 
  */
 define('FILES_PATH', __DIR__.'/files');
 define('WEBSERVER_BASE_URL', 'yourdomain.com');
@@ -84,7 +83,7 @@ class EventHandler extends \danog\MadelineProto\EventHandler
                 $text = $update['message']['message'];
                 $chat_id = $update['message']['from_id'];
                 if ($text == '/start') {
-                    yield $this->messages->sendMessage(['peer' => $update, 'message' => 'Hi! please send me any file url or file uploaded in Telegram and I will upload to Telegram as file or generate download link of that file. \n Kindly Donate @ConQuerorRobot If You Like This \n Support Group @CuratorCrew', 'reply_to_msg_id' => $message_id]);
+                    yield $this->messages->sendMessage(['peer' => $update, 'message' => 'Hi! please send me any file url or file uploaded in Telegram and I will upload to Telegram as file or generate download link of that file. \n Kindly Donate @ If You Like This \n Support Group @', 'reply_to_msg_id' => $message_id]);
 
                     return;
                 }
