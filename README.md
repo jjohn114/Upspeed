@@ -30,5 +30,4 @@ You can use with 2 methods:
 // Working With Debian based distro
 
 ## Credits
-Thanks @nimah79 for async and helps!
-Thanks @spechide for helps! And it's ReEdited By [@TheDarkW3b](https://t.me/TheDarkW3b)
+
